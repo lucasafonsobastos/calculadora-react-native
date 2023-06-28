@@ -8,8 +8,6 @@ const styles = StyleSheet.create({
     },
     text: {
         marginTop: 16,
-        paddingVertical: 8,
-        padding: 100,
         borderWidth: 2,
         borderColor: '#20232a',
         borderRadius: 6,
@@ -21,10 +19,10 @@ const styles = StyleSheet.create({
     }
 });
 
-const Input = ()=> {
+const Input = ({value})=> {
     return (
         <View style={styles.container} >
-            <Text style={styles.text} > Testando </Text> 
+            <Text style={styles.text} > {value} </Text> 
         </View>
     )
 }

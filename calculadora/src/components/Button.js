@@ -3,15 +3,18 @@ import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
     container: {
-      flex: 0,
-    },
-    text: {
         width: 80,
-        heigth: 80,
+        height: 80,
+        margin: 10,
         borderWidth: 2,
         borderColor: '#20232a',
         borderRadius: 6,
         backgroundColor: '#0019',
+        alignItems: 'center',
+        justifyContent: 'center',
+    },
+    text: {
+        
         color: '#FFF',
         textAlign: 'center',
         fontSize: 30,
