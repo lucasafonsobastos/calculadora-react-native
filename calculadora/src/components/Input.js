@@ -7,6 +7,7 @@ const styles = StyleSheet.create({
       marginTop: 100,
     },
     text: {
+        height: 80,
         marginTop: 16,
         borderWidth: 2,
         borderColor: '#20232a',
