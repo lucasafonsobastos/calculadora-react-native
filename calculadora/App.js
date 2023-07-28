@@ -17,30 +17,40 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Input value={numero}/>
-      <View style={styles.numberLine}>
-        <Buton title="7" onPress={() => handlePress('7')} />
-        <Buton title="8" onPress={() => handlePress('8')} />
-        <Buton title="9" onPress={() => handlePress('9')} />
-        <Buton title="/" onPress={() => handlePress('/')} />
+      <View>
+        <Input value={numero}/>
       </View>
-      <View style={styles.numberLine}>
-        <Buton title="4" onPress={() => handlePress('4')} />
-        <Buton title="5" onPress={() => handlePress('5')} />
-        <Buton title="6" onPress={() => handlePress('6')} />
-        <Buton title="*" onPress={() => handlePress('*')} />
-      </View>
-      <View style={styles.numberLine}>
-        <Buton title="1" onPress={() => handlePress('1')} />
-        <Buton title="2" onPress={() => handlePress('2')} />
-        <Buton title="3" onPress={() => handlePress('3')} />
-        <Buton title="-" onPress={() => handlePress('-')} />
-      </View>
-      <View style={styles.numberLine}>
-        <Buton title="AC" onPress={() => handlePress('AC')} />
-        <Buton title="0" onPress={() => handlePress('0')} />
-        <Buton title="." onPress={() => handlePress('.')} />
-        <Buton title="+" onPress={() => handlePress('+')} />
+      <View style= {styles.numberView}>
+        <View style={styles.numberLine}>
+          <Buton title="AC" onPress={() => handlePress('AC')} />
+          <Buton title="r" onPress={() => handlePress('r')} />
+          <Buton title="%" onPress={() => handlePress('%')} />
+          <Buton title="/" onPress={() => handlePress('/')} />
+        </View>
+        <View style={styles.numberLine}>
+          <Buton title="7" onPress={() => handlePress('7')} />
+          <Buton title="8" onPress={() => handlePress('8')} />
+          <Buton title="9" onPress={() => handlePress('9')} />
+          <Buton title="*" onPress={() => handlePress('*')} />
+        </View>
+        <View style={styles.numberLine}>
+          <Buton title="4" onPress={() => handlePress('4')} />
+          <Buton title="5" onPress={() => handlePress('5')} />
+          <Buton title="6" onPress={() => handlePress('6')} />
+          <Buton title="-" onPress={() => handlePress('-')} />
+        </View>
+        <View style={styles.numberLine}>
+          <Buton title="1" onPress={() => handlePress('1')} />
+          <Buton title="2" onPress={() => handlePress('2')} />
+          <Buton title="3" onPress={() => handlePress('3')} />
+          <Buton title="+" onPress={() => handlePress('+')} />
+        </View>
+        <View style={styles.numberLine}>
+          <Buton title="0" onPress={() => handlePress('0')} />
+          <Buton title="." onPress={() => handlePress('.')} />
+          <Buton title="=" onPress={() => handlePress('=')} />
+          <Buton title="=" onPress={() => handlePress('=')} />
+        </View>
       </View>
       
       <StatusBar style="auto" />
@@ -51,13 +61,18 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    justifyContent: 'center',
+    justifyContent: 'flex-end',
   },
 
   numberLine: {
-    alignContent: 'center',
+    alignItems: 'center',
     flexDirection: 'row',
     flexWrap: 'wrap',
-  }
+  },
+
+  numberView: {
+    justifyContent: 'flex-end',
+    alignItems: 'center'
+  },
 
 });
