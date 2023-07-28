@@ -4,19 +4,19 @@ import { StyleSheet, Text, View } from 'react-native';
 const styles = StyleSheet.create({
     container: {
       flex: 1,
-      marginTop: 100,
     },
     text: {
-        height: 80,
-        marginTop: 16,
+        height: 120,
+        margin: 10,
         borderWidth: 2,
         borderColor: '#20232a',
         borderRadius: 6,
         backgroundColor: '#0019',
         color: '#FFF',
-        textAlign: 'center',
         fontSize: 30,
         fontWeight: 'bold',
+        textAlign: 'end',
+        
     }
 });
 
